@@ -7,6 +7,7 @@ import HeaderLarge from './HeaderLarge.vue';
 import HeaderMedium from './HeaderMedium.vue';
 import TextLarge from './TextLarge.vue';
 import Divider from './Divider.vue';
+import FieldImage from './FieldImage.vue';
 
 require('typeface-roboto-condensed');
 
@@ -19,6 +20,7 @@ const Components = {
   HeaderMedium,
   TextLarge,
   Divider,
+  FieldImage,
 };
 
 Object.keys(Components).forEach((name) => {
