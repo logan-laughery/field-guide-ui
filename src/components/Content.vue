@@ -15,5 +15,7 @@ export default {
   height: 100%;
   width: 100%;
   padding: 0px 8px;
+  max-height: 100%;
+  overflow-y: auto;
 }
 </style>
