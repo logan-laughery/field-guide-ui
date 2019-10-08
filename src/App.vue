@@ -1,9 +1,27 @@
 <template>
   <Container>
     <SideBar>
-      <header-large>
-        FIELD GUIDE
-      </header-large>
+      <Content>
+        <header-large>
+          FIELD GUIDE
+        </header-large>
+        <br/>
+        <header-medium>
+          Overview
+        </header-medium>
+        <text-large>
+          Introduction
+        </text-large>
+        <text-large>
+          Setup
+        </text-large>
+        <header-medium>
+          Components
+        </header-medium>
+        <text-large>
+          Text
+        </text-large>
+      </Content>
     </SideBar>
     <Content>
       <router-view/>
@@ -20,4 +38,8 @@ export default {
 </script>
 
 <style>
+.side-bar {
+  padding: 0px;
+  padding-right: 2px;
+}
 </style>

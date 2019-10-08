@@ -1,6 +1,8 @@
 <template>
-  <div class="content">
-    <slot></slot>
+  <div class="scrollbox">
+    <div class="content">
+      <slot></slot>
+    </div>
   </div>
 </template>
 
@@ -11,11 +13,36 @@ export default {
 </script>
 
 <style scoped>
+.scrollbox {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: overlay;
+}
 .content {
   height: 100%;
   width: 100%;
-  padding: 0px 8px;
+  box-sizing: border-box;
+  padding-right: 10px;
+  padding-left: 10px;
   max-height: 100%;
-  overflow-y: auto;
+  display: inline-block;
+}
+.scrollbox::-webkit-scrollbar {
+  width:8px;
+}
+.scrollbox::-webkit-scrollbar * {
+  background:transparent;
+}
+.scrollbox::-webkit-scrollbar-thumb {
+  background:#2b2b2bd1 !important;
+}
+.scrollbox {
+  visibility: hidden;
+}
+.content,
+.scrollbox:hover,
+.scrollbox:focus {
+  visibility: visible;
 }
 </style>
