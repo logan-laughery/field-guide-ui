@@ -49,6 +49,7 @@ export default {
   margin: 32px 0px;
 }
 .text-large {
+  padding-left: 20px;
   max-width: 450px;
 }
 .field-image {

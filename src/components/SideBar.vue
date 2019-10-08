@@ -13,8 +13,8 @@ export default {
 <style scoped>
 .side-bar {
   height: 100%;
-  width: calc(200px - 16px);
-  padding: 0px 8px;
+  width: calc(250px - 16px);
+  padding: 0px 0px;
   border-right: 4px solid;
 }
 </style>
