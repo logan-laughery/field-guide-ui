@@ -15,4 +15,7 @@ export default {
   font-size: 20px;
   font-weight: 400;
 }
+.side-bar .content .text-large {
+  padding-left: 20px;
+}
 </style>

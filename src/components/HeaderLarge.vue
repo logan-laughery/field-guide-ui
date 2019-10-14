@@ -14,4 +14,7 @@ export default {
 .header-large {
   font-size: 28px;
 }
+.side-bar .content .header-large {
+  padding-left: 0px;
+}
 </style>

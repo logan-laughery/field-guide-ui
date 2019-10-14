@@ -6,7 +6,7 @@
       found in vintage field guides.
     </text-large>
     <divider/>
-    <field-image
+    <image-container
       v-for="(image, index) in images"
       :src="image"
       :key="index"
@@ -44,16 +44,17 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .divider {
   margin: 32px 0px;
 }
 .text-large {
-  padding-left: 20px;
   max-width: 450px;
 }
-.field-image {
-  height: 200px;
+.image-container {
+  width: 200px;
   margin: 20px;
+  margin-left: 0px;
+  margin-top: 0px;
 }
 </style>
