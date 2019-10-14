@@ -7,7 +7,9 @@ import HeaderLarge from './HeaderLarge.vue';
 import HeaderMedium from './HeaderMedium.vue';
 import TextLarge from './TextLarge.vue';
 import Divider from './Divider.vue';
-import FieldImage from './FieldImage.vue';
+import ImageContainer from './ImageContainer.vue';
+import CodeContent from './Code.vue';
+import Card from './Card.vue';
 
 require('typeface-roboto-condensed');
 
@@ -20,7 +22,9 @@ const Components = {
   HeaderMedium,
   TextLarge,
   Divider,
-  FieldImage,
+  ImageContainer,
+  CodeContent,
+  Card,
 };
 
 Object.keys(Components).forEach((name) => {

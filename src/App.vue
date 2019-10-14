@@ -1,6 +1,6 @@
 <template>
   <Container>
-    <SideBar>
+    <SideBar class="side-bar">
       <Content>
         <header-large>
           FIELD GUIDE
@@ -9,21 +9,21 @@
         <header-medium>
           Overview
         </header-medium>
-        <text-large>
+        <router-link to="/Introduction">
           Introduction
-        </text-large>
+        </router-link>
         <text-large>
           Setup
         </text-large>
         <header-medium>
           Components
         </header-medium>
-        <text-large>
-          Text
-        </text-large>
+        <router-link to="/ImageContainer">
+          Image Container
+        </router-link>
       </Content>
     </SideBar>
-    <Content>
+    <Content padding>
       <router-view/>
     </Content>
   </Container>
@@ -31,15 +31,30 @@
 
 <script>
 import './components/index';
+import './docs/shared/index';
 
 export default {
   name: 'app',
 };
 </script>
 
-<style>
+<style scoped>
 .side-bar {
   padding: 0px;
   padding-right: 2px;
+}
+.side-bar a {
+  text-decoration: inherit;
+  color: inherit;
+  font-size: 20px;
+  font-weight: 400;
+  padding-left: 20px;
+}
+.side-bar a:visited {
+  text-decoration: inherit;
+  color: inherit;
+}
+.side-bar a:hover {
+  text-decoration: underline;
 }
 </style>

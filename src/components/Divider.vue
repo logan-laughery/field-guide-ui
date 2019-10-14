@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: 'Deivider',
+  name: 'Divider',
 };
 </script>
 
@@ -12,5 +12,9 @@ export default {
 .divider {
   border-width: 2px;
   border-style: solid;
+}
+.content.padding .divider {
+  margin-left: -20px;
+  margin-right: -20px;
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div class="scrollbox">
-    <div class="content">
+    <div class="content" v-bind:class="{ padding: padding }">
       <slot></slot>
     </div>
   </div>
@@ -9,6 +9,9 @@
 <script>
 export default {
   name: 'Content',
+  props: {
+    padding: Boolean,
+  },
 };
 </script>
 
@@ -44,5 +47,8 @@ export default {
 .scrollbox:hover,
 .scrollbox:focus {
   visibility: visible;
+}
+.content.padding {
+  padding: 0 30px;
 }
 </style>
