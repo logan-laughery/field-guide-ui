@@ -1,26 +1,28 @@
 <template>
   <Container mobile>
-    <template slot="sidebar" slot-scope="scope">
+    <template slot="sidebar" slot-scope="sidebar">
       <SideBar
         class="side-bar"
-        :toggle="scope.toggle"
+        :toggle="sidebar.toggle"
+        title="Field Guide"
+        :page="currentRouteName"
       >
         <Content>
-          <header-large>
+          <header-large v-if="!sidebar.isMobile">
             FIELD GUIDE
           </header-large>
-          <br/>
+          <br v-if="!sidebar.isMobile"/>
           <header-medium>
             Overview
           </header-medium>
           <router-link
-            @click.native="scope.close"
+            @click.native="sidebar.close"
             to="/Introduction"
           >
             Introduction
           </router-link>
           <router-link
-            @click.native="scope.close"
+            @click.native="sidebar.close"
             to="/Introduction"
           >
             Setup
@@ -29,13 +31,13 @@
             Components
           </header-medium>
           <router-link
-            @click.native="scope.close"
+            @click.native="sidebar.close"
             to="/ImageContainer"
           >
             Image Container
           </router-link>
           <router-link
-            @click.native="scope.close"
+            @click.native="sidebar.close"
             to="/Card"
           >
             Card
@@ -57,6 +59,11 @@ import './docs/shared/index';
 
 export default {
   name: 'app',
+  computed: {
+    currentRouteName() {
+      return this.$route.name;
+    },
+  },
 };
 </script>
 

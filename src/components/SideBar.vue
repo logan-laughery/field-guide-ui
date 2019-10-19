@@ -5,8 +5,8 @@
     </template>
     <template v-else>
       <div class="skinny-sidebar">
-        <div class="page">Page</div>
-        <div class="title">Field Guide UI</div>
+        <div class="page">{{page}}</div>
+        <div class="title">{{title}}</div>
         <span class="menu-icon" v-on:click="toggleExpanded">
           <Menu/>
         </span>
@@ -28,6 +28,7 @@ export default {
   },
   props: {
     title: String,
+    page: String,
     mobile: Boolean,
     toggle: Function,
   },
@@ -47,7 +48,6 @@ export default {
   },
   methods: {
     toggleExpanded() {
-      console.log('toggling');
       this.toggle();
     },
   },

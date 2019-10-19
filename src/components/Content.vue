@@ -1,6 +1,8 @@
 <template>
   <div class="scrollbox">
-    <div class="content" v-bind:class="{ padding: padding }">
+    <div class="content"
+      v-bind:class="{ padding: padding }"
+    >
       <slot></slot>
     </div>
   </div>
@@ -31,23 +33,25 @@ export default {
   max-height: 100%;
   display: inline-block;
 }
-.scrollbox::-webkit-scrollbar {
-  width:8px;
-}
-.scrollbox::-webkit-scrollbar * {
-  background:transparent;
-}
-.scrollbox::-webkit-scrollbar-thumb {
-  background:#2b2b2bd1 !important;
-}
-.scrollbox {
-  visibility: hidden;
-}
-.content,
-.scrollbox:hover,
-.scrollbox:active,
-.scrollbox:focus {
-  visibility: visible;
+@media only screen and (min-width: 600px) {
+  .scrollbox::-webkit-scrollbar {
+    width:8px;
+  }
+  .scrollbox::-webkit-scrollbar * {
+    background:transparent;
+  }
+  .scrollbox::-webkit-scrollbar-thumb {
+    background:#2b2b2bd1 !important;
+  }
+  .scrollbox {
+    visibility: hidden;
+  }
+  .content,
+  .scrollbox:hover,
+  .scrollbox:active,
+  .scrollbox:focus {
+    visibility: visible;
+  }
 }
 .content.padding {
   padding: 0 30px;
