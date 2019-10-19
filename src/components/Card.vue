@@ -1,5 +1,5 @@
 <template>
-  <div class="card-container">
+  <div class="card-container"  v-bind:class="{ shadow: shadow }">
     <div class="card-header">
       <div class="card-header-left"/>
       <div class="card-header-title">
@@ -22,6 +22,7 @@ export default {
   name: 'Card',
   props: {
     title: String,
+    shadow: Boolean,
   },
 };
 </script>
@@ -68,5 +69,14 @@ export default {
   border-style: solid;
   padding: 16px;
   border-top: 0px;
+}
+
+.shadow .card-header-right {
+  border-right-width: 6px;
+}
+
+.shadow .card-body {
+  border-right-width: 6px;
+  border-bottom-width: 6px;
 }
 </style>

@@ -2,7 +2,7 @@ import Vue from 'vue';
 import Router from 'vue-router';
 import LandingPage from '../docs/LandingPage.vue';
 import ImageContainerDocs from '../docs/ImageContainerDocs.vue';
-import HelloWorldDocs from '../docs/HelloWorldDocs.vue';
+import CardDocs from '../docs/CardDocs.vue';
 
 Vue.use(Router);
 
@@ -24,9 +24,9 @@ export default new Router({
       component: ImageContainerDocs,
     },
     {
-      path: '/HelloWorld',
-      name: 'HelloWorld',
-      component: HelloWorldDocs,
+      path: '/Card',
+      name: 'Card',
+      component: CardDocs,
     },
   ],
 });
