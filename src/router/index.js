@@ -20,7 +20,7 @@ export default new Router({
     },
     {
       path: '/ImageContainer',
-      name: 'ImageContainer',
+      name: 'Image Container',
       component: ImageContainerDocs,
     },
     {

@@ -5,6 +5,8 @@
         name="sidebar"
         :close="close"
         :toggle="toggle"
+        :isExpanded="isExpanded"
+        :isMobile="isMobile"
       />
       <slot name="content"/>
     </template>
@@ -34,6 +36,9 @@ export default {
   computed: {
     isMobile() {
       return this.width < 600;
+    },
+    isExpanded() {
+      return this.isMobile && this.expanded;
     },
   },
   methods: {
