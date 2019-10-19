@@ -45,6 +45,7 @@ export default {
 }
 .content,
 .scrollbox:hover,
+.scrollbox:active,
 .scrollbox:focus {
   visibility: visible;
 }

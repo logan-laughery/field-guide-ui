@@ -1,5 +1,6 @@
 import Vue from 'vue';
 import VueHighlightJS from 'vue-highlightjs';
+import 'vue-material-design-icons/styles.css';
 import App from './App.vue';
 import router from './router';
 
