@@ -25,7 +25,6 @@ import fossilImageTwo from '../assets/field_note_examples/fossil_2.jpg';
 import fossilImageThree from '../assets/field_note_examples/fossil_3.jpg';
 import plantImageOne from '../assets/field_note_examples/plant_1.jpg';
 
-
 export default {
   name: 'LandingPage',
   data: () => ({
