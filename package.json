@@ -5,12 +5,12 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --dest docs",
-    "build:lib": "vue-cli-service build --target lib --dest dist/lib --name field-guide-ui ./src/components/index.js",
     "lint": "vue-cli-service lint",
+    "build:lib": "vue-cli-service build --target lib --dest dist/lib --name field-guide-ui ./src/components/index.js",
     "lint:fix": "vue-cli-service lint --fix"
   },
   "dependencies": {
-    "core-js": "^2.6.5",
+    "core-js": "^3.6.5",
     "highlight.js": "^9.15.10",
     "typeface-roboto-condensed": "0.0.75",
     "vue": "^2.6.10",
@@ -20,13 +20,14 @@
     "vue2-touch-events": "^2.0.0"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.11.0",
-    "@vue/cli-plugin-eslint": "^3.11.0",
-    "@vue/cli-service": "^3.11.0",
-    "@vue/eslint-config-airbnb": "^4.0.0",
-    "babel-eslint": "^10.0.1",
-    "eslint": "^5.16.0",
-    "eslint-plugin-vue": "^5.0.0",
+    "@vue/cli-plugin-babel": "^4.5.6",
+    "@vue/cli-plugin-eslint": "^4.5.6",
+    "@vue/cli-service": "^4.5.6",
+    "@vue/eslint-config-airbnb": "^5.0.2",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-vue": "^6.2.2",
     "vue-template-compiler": "^2.6.10"
   }
 }
