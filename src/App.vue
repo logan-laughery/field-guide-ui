@@ -16,31 +16,23 @@
             Overview
           </header-medium>
           <router-link
+            v-for="overviewLink in overviewLinks"
             @click.native="sidebar.close"
-            to="/Introduction"
+            :to="overviewLink.to"
+            :key="overviewLink.label"
           >
-            Introduction
-          </router-link>
-          <router-link
-            @click.native="sidebar.close"
-            to="/Introduction"
-          >
-            Setup
+            {{getLinkText(overviewLink)}}
           </router-link>
           <header-medium>
             Components
           </header-medium>
           <router-link
+            v-for="componentLink in componentLinks"
             @click.native="sidebar.close"
-            to="/ImageContainer"
+            :to="componentLink.to"
+            :key="componentLink.label"
           >
-            Image Container
-          </router-link>
-          <router-link
-            @click.native="sidebar.close"
-            to="/Card"
-          >
-            Card
+            {{getLinkText(componentLink)}}
           </router-link>
         </Content>
       </SideBar>
@@ -62,6 +54,37 @@ export default {
   computed: {
     currentRouteName() {
       return this.$route.name;
+    },
+  },
+  data: () => ({
+    componentLinks: [
+      {
+        to: '/ImageContainer',
+        label: 'Image Container',
+      },
+      {
+        to: '/Card',
+        label: 'Card',
+      },
+    ],
+    overviewLinks: [
+      {
+        to: '/Introduction',
+        label: 'Introduction',
+      },
+      {
+        to: '/Setup',
+        label: 'Setup',
+      },
+    ],
+  }),
+  methods: {
+    getLinkText(link) {
+      if (this.$route.path === link.to) {
+        return `> ${link.label}`;
+      }
+
+      return link.label;
     },
   },
 };
@@ -88,6 +111,11 @@ export default {
 }
 .side-bar a:hover, .side-bar a:active  {
   text-decoration: underline;
+}
+.side-bar a.router-link-active {
+  text-decoration: none;
+  padding-left: 6px;
+  cursor: default;
 }
 .content.padding > div {
   padding-bottom: 30px;

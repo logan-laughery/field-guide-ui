@@ -17,8 +17,12 @@
     </code-example>
 
     <br/>
+    <br/>
 
     <usage :props="props" :slots="slots"/>
+
+    <br/>
+    <br/>
 
     <code-example title="With Caption" :code="labelExample">
       <template v-slot:example>
