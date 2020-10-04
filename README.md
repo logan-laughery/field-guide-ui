@@ -1,21 +1,25 @@
 # field-guide-ui
+Vue Design System Inspired By Vintage Field Guides
 
-## Project setup
+[View the docs](https://logan-laughery.github.io/field-guide-ui)
+
+## Contributing
+### Project setup
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+#### Compiles and hot-reloads for development
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+#### Compiles and minifies for production
 ```
 npm run build
 ```
 
-### Run your tests
+#### Run tests
 ```
 npm run test
 ```
