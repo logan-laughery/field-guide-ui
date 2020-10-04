@@ -22,10 +22,14 @@
     </code-example>
 
     <br/>
+    <br/>
 
     <usage :props="props" :slots="slots"/>
 
-    <code-example title="With Shadow" :code="labelExample">
+    <br/>
+    <br/>
+
+    <code-example title="With Shadow" :code="shadowExample">
       <template v-slot:example>
         <card
           title="Card Title"
@@ -41,48 +45,38 @@
 </template>
 
 <script>
-import basicExampleImage from '../assets/field_note_examples/bird_1.jpg';
-import labelExampleImage from '../assets/field_note_examples/bird_3.jpg';
-
 export default {
   name: 'CardDocs',
   data: () => ({
-    basicExampleImage,
     basicExample: ''
       + '<template>\n'
-      + '  <image-container :src="birdImage">\n'
+      + '  <card title="Card Title">\n'
+      + '    <text-large>\n'
+      + '      Card Body\n'
+      + '    </text-large>\n'
+      + '  </card>\n'
       + '</template>\n'
       + '\n'
       + '<script>\n'
-      + 'import birdImage from \'../assets/field_note_examples/bird_1.jpg\';\n'
-      + '\n'
       + 'export default {\n'
-      + '  name: \'ImageContainer\',\n'
-      + '  data: () => ({\n'
-      + '    birdImage,\n'
-      + '  }),\n'
+      + '  name: \'CardExample\',\n'
       + '};\n'
       + '<script>',
-    labelExampleImage,
-    labelExample: ''
+    shadowExample: ''
       + '<template>\n'
-      + '  <image-container :src="labelImage">\n'
-      + '   <template v-slot:caption>\n'
-      + '     <span>\n'
-      + '       This is a caption.\n'
-      + '     </span>\n'
-      + '   </template>\n'
-      + '  </image-container>\n'
+      + '  <card\n'
+      + '    title="Card Title"\n'
+      + '    shadow\n'
+      + '  >\n'
+      + '    <text-large>\n'
+      + '      Card Body\n'
+      + '    </text-large>\n'
+      + '  </card>\n'
       + '</template>\n'
       + '\n'
       + '<script>\n'
-      + 'import labelImage from \'../assets/field_note_examples/bird_4.jpg\';\n'
-      + '\n'
       + 'export default {\n'
-      + '  name: \'ImageContainer\',\n'
-      + '  data: () => ({\n'
-      + '    labelImage,\n'
-      + '  }),\n'
+      + '  name: \'CardExample\',\n'
       + '};\n'
       + '<script>',
     props: [

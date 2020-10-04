@@ -32,6 +32,7 @@ export default {
   display: flex;
   flex-direction: row;
   height: 30px;
+  overflow: hidden;
 }
 
 .card-header-left {

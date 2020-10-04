@@ -1,15 +1,16 @@
 <template>
   <div class="code-example">
-    <header-medium>
-      {{title}}
-    </header-medium>
-    <div class="label" v-on:click="toggleCode">
-      {{labelText}}
-    </div>
-    <code-content v-if="viewingCode" :code="code"/>
-    <div v-else>
-      <slot name="example"/>
-    </div>
+    <card
+      :title="title"
+    >
+      <div class="label" v-on:click="toggleCode">
+        {{labelText}}
+      </div>
+      <code-content v-if="viewingCode" :code="code"/>
+      <div v-else>
+        <slot name="example"/>
+      </div>
+    </card>
   </div>
 </template>
 
@@ -23,8 +24,8 @@ export default {
   computed: {
     labelText() {
       return this.viewingCode
-        ? 'View Results'
-        : 'View Code';
+        ? '[ View Results ]'
+        : '[ View Code ]';
     },
   },
   data: () => ({
@@ -40,9 +41,11 @@ export default {
 
 <style scoped>
 .code-example .label {
-    margin-bottom: 12px;
+    margin-bottom: 5px;
     margin-top: -12px;
     cursor: pointer;
+    user-select: none;
     width: fit-content;
+    color: #ef0000;
 }
 </style>

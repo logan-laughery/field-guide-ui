@@ -1,5 +1,9 @@
 <template>
-  <card title="Usage" class="usage">
+  <div>
+    <header-large>
+      Usage
+    </header-large>
+
     <header-medium v-if="props.length">
       Props
     </header-medium>
@@ -23,7 +27,7 @@
         {{slot.name}} | {{slot.description}}
       </text-large>
     </div>
-  </card>
+  </div>
 </template>
 
 <script>

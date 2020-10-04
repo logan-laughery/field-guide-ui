@@ -27,4 +27,12 @@ export default {
   border-style: solid;
   width: 100%;
 }
+.image-container .caption {
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 100%;
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+}
 </style>
