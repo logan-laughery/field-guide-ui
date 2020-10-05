@@ -3,6 +3,7 @@ import Router from 'vue-router';
 import LandingPage from '../docs/LandingPage.vue';
 import ImageContainerDocs from '../docs/ImageContainerDocs.vue';
 import CardDocs from '../docs/CardDocs.vue';
+import TableDocs from '../docs/TableDocs.vue';
 
 Vue.use(Router);
 
@@ -27,6 +28,11 @@ export default new Router({
       path: '/Card',
       name: 'Card',
       component: CardDocs,
+    },
+    {
+      path: '/Table',
+      name: 'Table',
+      component: TableDocs,
     },
   ],
 });

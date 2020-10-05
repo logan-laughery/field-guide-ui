@@ -66,6 +66,10 @@ export default {
         to: '/Card',
         label: 'Card',
       },
+      {
+        to: '/Table',
+        label: 'Table',
+      },
     ],
     overviewLinks: [
       {
