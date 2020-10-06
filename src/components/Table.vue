@@ -6,7 +6,7 @@
           <th
             v-for="(header, index) in headers"
             :key="index"
-            :style="{ textAlign: header.rightAlign ? 'right' : 'initial'  }"
+            :style="{ textAlign: header.align ? header.align : 'left'  }"
           >
             {{ header.label }}
           </th>
@@ -17,9 +17,9 @@
           <td
             v-for="(col, colIndex) in Object.keys(row).length"
             :key="'col' + colIndex"
-            :style="{ textAlign: headers[colIndex].rightAlign ? 'right' : 'initial'  }"
+            :style="{ textAlign: headers[colIndex].align ? headers[colIndex].align : 'left'  }"
           >
-            {{ row[headers[colIndex].valueKey] }}
+            {{ row[headers[colIndex].value] }}
           </td>
         </tr>
       </tbody>
@@ -43,7 +43,7 @@ export default {
       required: true,
       default: () => [],
       validator: (headers) => {
-        const requiredKeys = ['label', 'valueKey', 'rightAlign'];
+        const requiredKeys = ['label', 'valueKey'];
         return headers.every(
           (header) => requiredKeys.every(
             (key) => Object.prototype.hasOwnProperty.call(header, key),
