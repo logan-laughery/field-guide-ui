@@ -10,6 +10,7 @@ import Divider from './Divider.vue';
 import ImageContainer from './ImageContainer.vue';
 import CodeContent from './Code.vue';
 import Card from './Card.vue';
+import Table from './Table.vue';
 
 require('typeface-roboto-condensed');
 
@@ -25,6 +26,7 @@ const Components = {
   ImageContainer,
   CodeContent,
   Card,
+  Table,
 };
 
 Object.keys(Components).forEach((name) => {
