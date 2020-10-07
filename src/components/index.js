@@ -1,4 +1,3 @@
-import Vue from 'vue';
 import HelloWorld from './HelloWorld.vue';
 import SideBar from './SideBar.vue';
 import Container from './Container.vue';
@@ -29,8 +28,31 @@ const Components = {
   Table,
 };
 
-Object.keys(Components).forEach((name) => {
-  Vue.component(name, Components[name]);
-});
+const install = (Vue) => {
+  Object.keys(Components).forEach((name) => {
+    Vue.component(name, Components[name]);
+  });
+};
 
-export default Components;
+// Automatic installation if Vue has been added to the global scope and file is imported/included.
+// - Typically CDN usage.
+if (typeof window !== 'undefined' && window.Vue) {
+  install(window.Vue);
+}
+
+// Exports install script if user wants to install framework globally
+export default install;
+
+// Named exports for all components if user wants to use components on demand instead of globally.
+export { HelloWorld };
+export { SideBar };
+export { Container };
+export { Content };
+export { HeaderLarge };
+export { HeaderMedium };
+export { TextLarge };
+export { Divider };
+export { ImageContainer };
+export { CodeContent };
+export { Card };
+export { Table };
