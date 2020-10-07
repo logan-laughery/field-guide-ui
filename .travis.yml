@@ -5,6 +5,9 @@ install:
   - npm install
 script:
   - npm run build # Generate docs
+branches:
+  only:
+  - master
 deploy:
   # Use Github pages deploy process
   provider: pages
