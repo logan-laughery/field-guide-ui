@@ -1,32 +1,32 @@
 import Vue from 'vue';
-import HelloWorld from './HelloWorld.vue';
-import SideBar from './SideBar.vue';
-import Container from './Container.vue';
-import Content from './Content.vue';
-import HeaderLarge from './HeaderLarge.vue';
-import HeaderMedium from './HeaderMedium.vue';
-import TextLarge from './TextLarge.vue';
-import Divider from './Divider.vue';
-import ImageContainer from './ImageContainer.vue';
-import CodeContent from './Code.vue';
-import Card from './Card.vue';
-import Table from './Table.vue';
+import FgHelloWorld from './FgHelloWorld.vue';
+import FgSideBar from './FgSideBar.vue';
+import FgContainer from './FgContainer.vue';
+import FgContent from './FgContent.vue';
+import FgHeaderLarge from './FgHeaderLarge.vue';
+import FgHeaderMedium from './FgHeaderMedium.vue';
+import FgTextLarge from './FgTextLarge.vue';
+import FgDivider from './FgDivider.vue';
+import FgImageContainer from './FgImageContainer.vue';
+import FgCodeContent from './FgCodeContent.vue';
+import FgCard from './FgCard.vue';
+import FgTable from './FgTable.vue';
 
 require('typeface-roboto-condensed');
 
 const Components = {
-  HelloWorld,
-  SideBar,
-  Container,
-  Content,
-  HeaderLarge,
-  HeaderMedium,
-  TextLarge,
-  Divider,
-  ImageContainer,
-  CodeContent,
-  Card,
-  Table,
+  FgHelloWorld,
+  FgSideBar,
+  FgContainer,
+  FgContent,
+  FgHeaderLarge,
+  FgHeaderMedium,
+  FgTextLarge,
+  FgDivider,
+  FgImageContainer,
+  FgCodeContent,
+  FgCard,
+  FgTable,
 };
 
 Object.keys(Components).forEach((name) => {

@@ -1,60 +1,60 @@
 <template>
   <div>
-    <divider/>
+    <fg-divider/>
 
-    <header-large>
-      CARD
-    </header-large>
+    <fg-header-large>
+      FgCard
+    </fg-header-large>
 
-    <text-large>
-      The `card` component provides the ability to organize
+    <fg-text-large>
+      The `fg-card` component provides the ability to organize
       content into different sections.
-    </text-large>
+    </fg-text-large>
 
-    <code-example title="Basic Example" :code="basicExample">
+    <fg-code-example title="Basic Example" :code="basicExample">
       <template v-slot:example>
-        <card title="Card Title">
-          <text-large>
+        <fg-card title="Card Title">
+          <fg-text-large>
             Card Body
-          </text-large>
-        </card>
+          </fg-text-large>
+        </fg-card>
       </template>
-    </code-example>
+    </fg-code-example>
 
     <br/>
     <br/>
 
-    <usage :props="props" :slots="slots"/>
+    <fg-usage :props="props" :slots="slots"/>
 
     <br/>
     <br/>
 
-    <code-example title="With Shadow" :code="shadowExample">
+    <fg-code-example title="With Shadow" :code="shadowExample">
       <template v-slot:example>
-        <card
+        <fg-card
           title="Card Title"
           shadow
         >
-          <text-large>
+          <fg-text-large>
             Card Body
-          </text-large>
-        </card>
+          </fg-text-large>
+        </fg-card>
       </template>
-    </code-example>
+    </fg-code-example>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'CardDocs',
+  name: 'FgCardDocs',
   data: () => ({
     basicExample: ''
       + '<template>\n'
-      + '  <card title="Card Title">\n'
-      + '    <text-large>\n'
+      + '  <fg-card title="Card Title">\n'
+      + '    <fg-text-large>\n'
       + '      Card Body\n'
-      + '    </text-large>\n'
-      + '  </card>\n'
+      + '    </fg-text-large>\n'
+      + '  </fg-card>\n'
       + '</template>\n'
       + '\n'
       + '<script>\n'
@@ -64,14 +64,14 @@ export default {
       + '<script>',
     shadowExample: ''
       + '<template>\n'
-      + '  <card\n'
+      + '  <fg-card\n'
       + '    title="Card Title"\n'
       + '    shadow\n'
       + '  >\n'
-      + '    <text-large>\n'
+      + '    <fg-text-large>\n'
       + '      Card Body\n'
-      + '    </text-large>\n'
-      + '  </card>\n'
+      + '    </fg-text-large>\n'
+      + '  </fg-card>\n'
       + '</template>\n'
       + '\n'
       + '<script>\n'

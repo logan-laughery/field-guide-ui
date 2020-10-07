@@ -1,12 +1,12 @@
 <template>
   <div>
-    <divider/>
-    <text-large>
+    <fg-divider/>
+    <fg-text-large>
       A design system inspired by the simplicity and useability
       found in vintage field guides.
-    </text-large>
-    <divider/>
-    <image-container
+    </fg-text-large>
+    <fg-divider/>
+    <fg-image-container
       v-for="(image, index) in images"
       :src="image"
       :key="index"
@@ -26,7 +26,7 @@ import fossilImageThree from '../assets/field_note_examples/fossil_3.jpg';
 import plantImageOne from '../assets/field_note_examples/plant_1.jpg';
 
 export default {
-  name: 'LandingPage',
+  name: 'FgLandingPage',
   data: () => ({
     images: [
       birdImageOne,

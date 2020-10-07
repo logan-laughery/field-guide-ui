@@ -1,39 +1,39 @@
 <template>
   <div>
-    <divider/>
+    <fg-divider/>
 
-    <header-large>
-      Table
-    </header-large>
+    <fg-header-large>
+      FgTable
+    </fg-header-large>
 
-    <text-large>
-      The `table` component provides the ability to organize
+    <fg-text-large>
+      The `fg-table` component provides the ability to organize
       content into different rows.
-    </text-large>
+    </fg-text-large>
 
-    <code-example title="Basic Example" :code="basicExample">
+    <fg-code-example title="Basic Example" :code="basicExample">
       <template v-slot:example>
-        <Table
+        <fg-table
           :items="items"
           :headers="headers"
         />
       </template>
-    </code-example>
+    </fg-code-example>
 
     <br/>
     <br/>
 
-    <usage :props="props" :slots="slots"/>
+    <fg-usage :props="props" :slots="slots"/>
 
   </div>
 </template>
 
 <script>
 // eslint-disable-next-line no-useless-escape
-const basicExample = '<template>\n  <Table\n    :items=\"items\"\n    :headers=\"headers\"\n  \/>\n<\/template>\n\n<script>\nexport default {\n  name: \'TableExample\',\n  data: () => ({\n    headers: [\n      {\n        label: \'Label1\',\n        value: \'Value1\',\n        },\n      {\n        label: \'Label2\',\n        value: \'Value2\',\n        },\n      {\n        label: \'Label3\',\n        value: \'Value3\',\n        },\n      {\n        label: \'Label4\',\n        value: \'Value4\',\n        align: \'right\',\n      },\n    ],\n    items: [\n      {\n        Value1: \'Value1\',\n        Value2: \'Value2\',\n        Value3: \'Value3\',\n        Value4: \'Value4\',\n      },\n      {\n        Value1: \'Value1\',\n        Value2: \'Value2\',\n        Value3: \'Value3\',\n        Value4: \'Value4\',\n      },\n      {\n        Value1: \'Value1\',\n        Value2: \'Value2\',\n        Value3: \'Value3\',\n        Value4: \'Value4\',\n      },\n      {\n        Value1: \'Value1\',\n        Value2: \'Value2\',\n        Value3: \'Value3\',\n        Value4: \'Value4\',\n      },\n    ],\n  }),\n};\n<\/script>';
+const basicExample = '<template>\n  <fg-table\n    :items=\"items\"\n    :headers=\"headers\"\n  \/>\n<\/template>\n\n<script>\nexport default {\n  name: \'TableExample\',\n  data: () => ({\n    headers: [\n      {\n        label: \'Label1\',\n        value: \'Value1\',\n        },\n      {\n        label: \'Label2\',\n        value: \'Value2\',\n        },\n      {\n        label: \'Label3\',\n        value: \'Value3\',\n        },\n      {\n        label: \'Label4\',\n        value: \'Value4\',\n        align: \'right\',\n      },\n    ],\n    items: [\n      {\n        Value1: \'Value1\',\n        Value2: \'Value2\',\n        Value3: \'Value3\',\n        Value4: \'Value4\',\n      },\n      {\n        Value1: \'Value1\',\n        Value2: \'Value2\',\n        Value3: \'Value3\',\n        Value4: \'Value4\',\n      },\n      {\n        Value1: \'Value1\',\n        Value2: \'Value2\',\n        Value3: \'Value3\',\n        Value4: \'Value4\',\n      },\n      {\n        Value1: \'Value1\',\n        Value2: \'Value2\',\n        Value3: \'Value3\',\n        Value4: \'Value4\',\n      },\n    ],\n  }),\n};\n<\/script>';
 
 export default {
-  name: 'TableDocs',
+  name: 'FgTableDocs',
   data: () => ({
     headers: [
       {

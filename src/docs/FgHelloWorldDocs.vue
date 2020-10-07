@@ -3,12 +3,12 @@
     <h1>
       Hello World Component
     </h1>
-    <HelloWorld/>
+    <fg-hello-world/>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorldDocs',
+  name: 'FgHelloWorldDocs',
 };
 </script>

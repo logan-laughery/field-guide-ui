@@ -1,38 +1,38 @@
 <template>
   <div>
-    <header-large>
-      Usage
-    </header-large>
+    <fg-header-large>
+      FgUsage
+    </fg-header-large>
 
-    <header-medium v-if="props.length">
+    <fg-header-medium v-if="props.length">
       Props
-    </header-medium>
+    </fg-header-medium>
     <div
       v-for="(prop, index) in props"
       :key="index"
     >
-      <text-large>
+      <fg-text-large>
         {{prop.name}} | {{prop.type}} | {{prop.description}}
-      </text-large>
+      </fg-text-large>
     </div>
 
-    <header-medium v-if="slots.length">
+    <fg-header-medium v-if="slots.length">
       Slots
-    </header-medium>
+    </fg-header-medium>
     <div
       v-for="(slot, index) in slots"
       :key="'slot-' + index"
     >
-      <text-large>
+      <fg-text-large>
         {{slot.name}} | {{slot.description}}
-      </text-large>
+      </fg-text-large>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Usage',
+  name: 'FgUsage',
   props: {
     props: {
       type: Array,

@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: 'HeaderMedium',
+  name: 'FgHeaderMedium',
 };
 </script>
 

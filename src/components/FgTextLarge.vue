@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: 'TextLarge',
+  name: 'FgTextLarge',
 };
 </script>
 

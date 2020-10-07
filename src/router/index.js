@@ -1,9 +1,9 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import LandingPage from '../docs/LandingPage.vue';
-import ImageContainerDocs from '../docs/ImageContainerDocs.vue';
-import CardDocs from '../docs/CardDocs.vue';
-import TableDocs from '../docs/TableDocs.vue';
+import FgLandingPage from '../docs/FgLandingPage.vue';
+import FgImageContainerDocs from '../docs/FgImageContainerDocs.vue';
+import FgCardDocs from '../docs/FgCardDocs.vue';
+import FgTableDocs from '../docs/FgTableDocs.vue';
 
 Vue.use(Router);
 
@@ -11,28 +11,28 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'LandingPage',
-      component: LandingPage,
+      name: 'FgLandingPage',
+      component: FgLandingPage,
     },
     {
       path: '/Introduction',
       name: 'Introduction',
-      component: LandingPage,
+      component: FgLandingPage,
     },
     {
-      path: '/ImageContainer',
-      name: 'Image Container',
-      component: ImageContainerDocs,
+      path: '/FgImageContainer',
+      name: 'Fg Image Container',
+      component: FgImageContainerDocs,
     },
     {
-      path: '/Card',
-      name: 'Card',
-      component: CardDocs,
+      path: '/FgCard',
+      name: 'FgCard',
+      component: FgCardDocs,
     },
     {
-      path: '/Table',
-      name: 'Table',
-      component: TableDocs,
+      path: '/FgTable',
+      name: 'FgTable',
+      component: FgTableDocs,
     },
   ],
 });

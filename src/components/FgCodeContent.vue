@@ -8,7 +8,7 @@
 import 'highlight.js/styles/default.css';
 
 export default {
-  name: 'CodeContent',
+  name: 'FgCodeContent',
   props: {
     code: String,
   },
