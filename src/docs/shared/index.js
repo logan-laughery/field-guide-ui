@@ -1,10 +1,10 @@
 import Vue from 'vue';
-import CodeExample from './CodeExample.vue';
-import Usage from './Usage.vue';
+import FgCodeExample from './FgCodeExample.vue';
+import FgUsage from './FgUsage.vue';
 
 const Components = {
-  CodeExample,
-  Usage,
+  FgCodeExample,
+  FgUsage,
 };
 
 Object.keys(Components).forEach((name) => {

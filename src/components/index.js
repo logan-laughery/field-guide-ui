@@ -1,31 +1,31 @@
-import HelloWorld from './HelloWorld.vue';
-import SideBar from './SideBar.vue';
-import Container from './Container.vue';
-import Content from './Content.vue';
-import HeaderLarge from './HeaderLarge.vue';
-import HeaderMedium from './HeaderMedium.vue';
-import TextLarge from './TextLarge.vue';
-import Divider from './Divider.vue';
-import ImageContainer from './ImageContainer.vue';
-import CodeContent from './Code.vue';
-import Card from './Card.vue';
-import Table from './Table.vue';
+import FgHelloWorld from './FgHelloWorld.vue';
+import FgSideBar from './FgSideBar.vue';
+import FgContainer from './FgContainer.vue';
+import FgContent from './FgContent.vue';
+import FgHeaderLarge from './FgHeaderLarge.vue';
+import FgHeaderMedium from './FgHeaderMedium.vue';
+import FgTextLarge from './FgTextLarge.vue';
+import FgDivider from './FgDivider.vue';
+import FgImageContainer from './FgImageContainer.vue';
+import FgCodeContent from './FgCodeContent.vue';
+import FgCard from './FgCard.vue';
+import FgTable from './FgTable.vue';
 
 require('typeface-roboto-condensed');
 
 const Components = {
-  HelloWorld,
-  SideBar,
-  Container,
-  Content,
-  HeaderLarge,
-  HeaderMedium,
-  TextLarge,
-  Divider,
-  ImageContainer,
-  CodeContent,
-  Card,
-  Table,
+  FgHelloWorld,
+  FgSideBar,
+  FgContainer,
+  FgContent,
+  FgHeaderLarge,
+  FgHeaderMedium,
+  FgTextLarge,
+  FgDivider,
+  FgImageContainer,
+  FgCodeContent,
+  FgCard,
+  FgTable,
 };
 
 const install = (Vue) => {
@@ -44,15 +44,15 @@ if (typeof window !== 'undefined' && window.Vue) {
 export default install;
 
 // Named exports for all components if user wants to use components on demand instead of globally.
-export { HelloWorld };
-export { SideBar };
-export { Container };
-export { Content };
-export { HeaderLarge };
-export { HeaderMedium };
-export { TextLarge };
-export { Divider };
-export { ImageContainer };
-export { CodeContent };
-export { Card };
-export { Table };
+export { FgHelloWorld };
+export { FgSideBar };
+export { FgContainer };
+export { FgContent };
+export { FgHeaderLarge };
+export { FgHeaderMedium };
+export { FgTextLarge };
+export { FgDivider };
+export { FgImageContainer };
+export { FgCodeContent };
+export { FgCard };
+export { FgTable };
