@@ -1,7 +1,7 @@
 <template>
   <div>
     <fg-header-large>
-      FgUsage
+      Usage
     </fg-header-large>
 
     <fg-header-medium v-if="props.length">

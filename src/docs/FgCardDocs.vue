@@ -3,7 +3,7 @@
     <fg-divider/>
 
     <fg-header-large>
-      FgCard
+      Card
     </fg-header-large>
 
     <fg-text-large>

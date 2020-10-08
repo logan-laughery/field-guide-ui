@@ -3,7 +3,7 @@
     <fg-divider/>
 
     <fg-header-large>
-      FG IMAGE CONTAINER
+      IMAGE CONTAINER
     </fg-header-large>
 
     <fg-text-large>

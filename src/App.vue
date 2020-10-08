@@ -1,5 +1,5 @@
 <template>
-  <FgContainer mobile>
+  <fg-container mobile>
     <template slot="sidebar" slot-scope="sidebar">
       <fg-side-bar
         class="side-bar"
@@ -42,7 +42,7 @@
         <router-view/>
       </fg-content>
     </template>
-  </FgContainer>
+  </fg-container>
 </template>
 
 <script>
@@ -60,15 +60,15 @@ export default {
     componentLinks: [
       {
         to: '/FgImageContainer',
-        label: 'Fg Image Container',
+        label: 'Image Container',
       },
       {
         to: '/FgCard',
-        label: 'FgCard',
+        label: 'Card',
       },
       {
         to: '/FgTable',
-        label: 'FgTable',
+        label: 'Table',
       },
     ],
     overviewLinks: [

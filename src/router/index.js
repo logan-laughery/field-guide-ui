@@ -11,7 +11,7 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'FgLandingPage',
+      name: 'LandingPage',
       component: FgLandingPage,
     },
     {
@@ -21,17 +21,17 @@ export default new Router({
     },
     {
       path: '/FgImageContainer',
-      name: 'Fg Image Container',
+      name: 'Image Container',
       component: FgImageContainerDocs,
     },
     {
       path: '/FgCard',
-      name: 'FgCard',
+      name: 'Card',
       component: FgCardDocs,
     },
     {
       path: '/FgTable',
-      name: 'FgTable',
+      name: 'Table',
       component: FgTableDocs,
     },
   ],

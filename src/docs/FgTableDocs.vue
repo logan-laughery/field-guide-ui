@@ -3,7 +3,7 @@
     <fg-divider/>
 
     <fg-header-large>
-      FgTable
+      Table
     </fg-header-large>
 
     <fg-text-large>
