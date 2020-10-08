@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: 'HeaderLarge',
+  name: 'FgHeaderLarge',
 };
 </script>
 

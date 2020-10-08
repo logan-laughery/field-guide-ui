@@ -31,7 +31,7 @@
 import 'highlight.js/styles/default.css';
 
 export default {
-  name: 'Table',
+  name: 'FgTable',
   props: {
     items: {
       type: Array,

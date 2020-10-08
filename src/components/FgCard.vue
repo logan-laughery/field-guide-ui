@@ -3,9 +3,9 @@
     <div class="card-header">
       <div class="card-header-left"/>
       <div class="card-header-title">
-        <header-medium>
+        <fg-header-medium>
           {{title}}
-        </header-medium>
+        </fg-header-medium>
       </div>
       <div class="card-header-right"/>
     </div>
@@ -19,7 +19,7 @@
 import 'highlight.js/styles/default.css';
 
 export default {
-  name: 'Card',
+  name: 'FgCard',
   props: {
     title: String,
     shadow: Boolean,

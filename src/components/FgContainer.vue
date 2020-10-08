@@ -18,7 +18,7 @@
 
 <script>
 export default {
-  name: 'Container',
+  name: 'FgContainer',
   data: () => ({
     width: window.innerWidth,
     expanded: false,

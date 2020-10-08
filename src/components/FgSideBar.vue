@@ -22,7 +22,7 @@
 import Menu from 'vue-material-design-icons/Menu.vue';
 
 export default {
-  name: 'SideBar',
+  name: 'FgSideBar',
   components: {
     Menu,
   },

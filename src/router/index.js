@@ -1,9 +1,9 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import LandingPage from '../docs/LandingPage.vue';
-import ImageContainerDocs from '../docs/ImageContainerDocs.vue';
-import CardDocs from '../docs/CardDocs.vue';
-import TableDocs from '../docs/TableDocs.vue';
+import FgLandingPage from '../docs/FgLandingPage.vue';
+import FgImageContainerDocs from '../docs/FgImageContainerDocs.vue';
+import FgCardDocs from '../docs/FgCardDocs.vue';
+import FgTableDocs from '../docs/FgTableDocs.vue';
 
 Vue.use(Router);
 
@@ -12,27 +12,27 @@ export default new Router({
     {
       path: '/',
       name: 'LandingPage',
-      component: LandingPage,
+      component: FgLandingPage,
     },
     {
       path: '/Introduction',
       name: 'Introduction',
-      component: LandingPage,
+      component: FgLandingPage,
     },
     {
-      path: '/ImageContainer',
+      path: '/FgImageContainer',
       name: 'Image Container',
-      component: ImageContainerDocs,
+      component: FgImageContainerDocs,
     },
     {
-      path: '/Card',
+      path: '/FgCard',
       name: 'Card',
-      component: CardDocs,
+      component: FgCardDocs,
     },
     {
-      path: '/Table',
+      path: '/FgTable',
       name: 'Table',
-      component: TableDocs,
+      component: FgTableDocs,
     },
   ],
 });

@@ -1,22 +1,22 @@
 <template>
   <div class="code-example">
-    <card
+    <fg-card
       :title="title"
     >
       <div class="label" v-on:click="toggleCode">
         {{labelText}}
       </div>
-      <code-content v-if="viewingCode" :code="code"/>
+      <fg-code-content v-if="viewingCode" :code="code"/>
       <div v-else>
         <slot name="example"/>
       </div>
-    </card>
+    </fg-card>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'CodeExample',
+  name: 'FgCodeExample',
   props: {
     title: String,
     code: String,

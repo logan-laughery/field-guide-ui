@@ -1,20 +1,20 @@
 <template>
-  <Container mobile>
+  <fg-container mobile>
     <template slot="sidebar" slot-scope="sidebar">
-      <SideBar
+      <fg-side-bar
         class="side-bar"
         :toggle="sidebar.toggle"
         title="Field Guide"
         :page="currentRouteName"
       >
-        <Content>
-          <header-large v-if="!sidebar.isMobile">
+        <fg-content>
+          <fg-header-large v-if="!sidebar.isMobile">
             FIELD GUIDE
-          </header-large>
+          </fg-header-large>
           <br v-if="!sidebar.isMobile"/>
-          <header-medium>
+          <fg-header-medium>
             Overview
-          </header-medium>
+          </fg-header-medium>
           <router-link
             v-for="overviewLink in overviewLinks"
             @click.native="sidebar.close"
@@ -23,9 +23,9 @@
           >
             {{getLinkText(overviewLink)}}
           </router-link>
-          <header-medium>
+          <fg-header-medium>
             Components
-          </header-medium>
+          </fg-header-medium>
           <router-link
             v-for="componentLink in componentLinks"
             @click.native="sidebar.close"
@@ -34,15 +34,15 @@
           >
             {{getLinkText(componentLink)}}
           </router-link>
-        </Content>
-      </SideBar>
+        </fg-content>
+      </fg-side-bar>
     </template>
     <template slot="content">
-      <Content padding>
+      <fg-content padding>
         <router-view/>
-      </Content>
+      </fg-content>
     </template>
-  </Container>
+  </fg-container>
 </template>
 
 <script>
@@ -59,15 +59,15 @@ export default {
   data: () => ({
     componentLinks: [
       {
-        to: '/ImageContainer',
+        to: '/FgImageContainer',
         label: 'Image Container',
       },
       {
-        to: '/Card',
+        to: '/FgCard',
         label: 'Card',
       },
       {
-        to: '/Table',
+        to: '/FgTable',
         label: 'Table',
       },
     ],
