@@ -46,7 +46,6 @@
 </template>
 
 <script>
-import './components/index';
 import './docs/shared/index';
 
 export default {

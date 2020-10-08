@@ -1,4 +1,3 @@
-import Vue from 'vue';
 import FgHelloWorld from './FgHelloWorld.vue';
 import FgSideBar from './FgSideBar.vue';
 import FgContainer from './FgContainer.vue';
@@ -29,8 +28,31 @@ const Components = {
   FgTable,
 };
 
-Object.keys(Components).forEach((name) => {
-  Vue.component(name, Components[name]);
-});
+const install = (Vue) => {
+  Object.keys(Components).forEach((name) => {
+    Vue.component(name, Components[name]);
+  });
+};
 
-export default Components;
+// Automatic installation if Vue has been added to the global scope and file is imported/included.
+// - Typically CDN usage.
+if (typeof window !== 'undefined' && window.Vue) {
+  install(window.Vue);
+}
+
+// Exports install script if user wants to install framework globally
+export default install;
+
+// Named exports for all components if user wants to use components on demand instead of globally.
+export { FgHelloWorld };
+export { FgSideBar };
+export { FgContainer };
+export { FgContent };
+export { FgHeaderLarge };
+export { FgHeaderMedium };
+export { FgTextLarge };
+export { FgDivider };
+export { FgImageContainer };
+export { FgCodeContent };
+export { FgCard };
+export { FgTable };
