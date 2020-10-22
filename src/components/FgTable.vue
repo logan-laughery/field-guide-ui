@@ -56,6 +56,10 @@ export default {
 </script>
 
 <style scoped>
+.table-container table {
+  table-layout: fixed;
+  width: 100%;
+}
 .table-container th {
   font-weight: normal;
   border-bottom: 2px dashed;
